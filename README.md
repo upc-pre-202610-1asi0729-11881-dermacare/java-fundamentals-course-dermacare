@@ -1,95 +1,71 @@
-# ☕ java-fundamentals-course-[equipo]
+# Fundamentos de Java para Principiantes — Dermacare
 
-Repositorio de código fuente del curso **"Fundamentos de Java para Principiantes"**, diseñado para estudiantes de secundaria de 12 a 17 años sin experiencia previa en programación.
+Repositorio oficial del curso introductorio de programación con Java para estudiantes de secundaria, elaborado por el equipo Dermacare de la Universidad Peruana de Ciencias Aplicadas.
 
-> 💡 No necesitas instalar nada. Solo abre tu navegador y empieza a programar.
+## Descripción
 
----
+Este curso enseña los fundamentos de Java y la Programación Orientada a Objetos (POO) a través de 8 lecciones cortas en video. No requiere instalar ningún programa: todo se trabaja directamente desde el navegador.
 
-## 🎯 Objetivo
+- **Duración total**: ~76 minutos
+- **Público objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación
+- **Herramientas necesarias**: Solo un navegador web (Chrome, Firefox, Safari o Edge)
+- **Editor en línea**: [OnlineGDB](https://www.onlinegdb.com)
 
-Introducir los fundamentos de Java y la Programación Orientada a Objetos (POO) de forma visual, progresiva y accesible, usando herramientas 100% en línea.
-
----
-
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
-java-fundamentals-course-[equipo]/
+java-fundamentals-course-dermacare/
 │
-├── README.md                          ← Este documento
-├── course-plan.md                     ← Plan completo del curso
+├── README.md                      ← Documentación principal del repositorio
+├── course-plan.md                 ← Plan completo del curso
 │
-├── /starter-files/                    ← Código incompleto para practicar
-│   ├── Lesson01_Intro.java
-│   ├── Lesson02_Variables.java
-│   ├── Lesson03_Operators.java
-│   ├── Lesson04_ControlFlow.java
-│   ├── Lesson05_Methods.java
-│   ├── Lesson06_IO.java
-│   ├── Lesson07_OOP_Basics.java
-│   ├── Lesson08_Encapsulation.java
-│   ├── Lesson09_Arrays.java
-│   └── Lesson10_FinalProject.java
+├── starter-files/                 ← Código inicial de las lecciones
+│   ├── lesson-01/
+│   ├── lesson-02/
+│   ├── lesson-03/
+│   ├── lesson-04/
+│   ├── lesson-05/
+│   ├── lesson-06/
+│   ├── lesson-07/
+│   └── lesson-08/
 │
-├── /completed-examples/               ← Código resuelto de cada lección
-│   ├── Lesson01_Intro.java
-│   ├── Lesson02_Variables.java
-│   ├── Lesson03_Operators.java
-│   ├── Lesson04_ControlFlow.java
-│   ├── Lesson05_Methods.java
-│   ├── Lesson06_IO.java
-│   ├── Lesson07_OOP_Basics.java
-│   ├── Lesson08_Encapsulation.java
-│   ├── Lesson09_Arrays.java
-│   └── Lesson10_FinalProject.java
+├── completed-examples/            ← Código final y completo de cada lección
+│   ├── lesson-01/
+│   ├── lesson-02/
+│   ├── lesson-03/
+│   ├── lesson-04/
+│   ├── lesson-05/
+│   ├── lesson-06/
+│   ├── lesson-07/
+│   └── lesson-08/
 │
-└── /scripts/                          ← Guiones de cada video
-    ├── lesson01-script.md
-    ├── lesson02-script.md
-    ├── lesson03-script.md
-    ├── lesson04-script.md
-    ├── lesson05-script.md
-    ├── lesson06-script.md
-    ├── lesson07-script.md
-    ├── lesson08-script.md
-    ├── lesson09-script.md
-    └── lesson10-script.md
+└── scripts/                       ← Guiones narrativos de cada video
+    ├── lesson-01-script.md
+    ├── lesson-02-script.md
+    ├── lesson-03-script.md
+    ├── lesson-04-script.md
+    ├── lesson-05-script.md
+    ├── lesson-06-script.md
+    ├── lesson-07-script.md
+    └── lesson-08-script.md
 ```
 
----
+## Cómo usar este repositorio
 
-## ▶️ Cómo usar este repositorio
+1. Abre el archivo `course-plan.md` para ver la secuencia completa del curso con los enlaces a cada video y actividad práctica.
+2. Los archivos en `starter-files/` son el punto de partida para cada ejercicio práctico.
+3. Los archivos en `completed-examples/` muestran el resultado esperado al finalizar cada lección.
+4. Los archivos en `scripts/` contienen los guiones utilizados para grabar cada video.
 
-1. Abre el enlace de práctica de la lección en tu navegador
-2. Usa el código de `/starter-files` como punto de partida
-3. Completa los ejercicios propuestos
-4. Si te quedas atascado, revisa `/completed-examples`
-5. Sigue el guion del video en `/scripts` para entender el contexto
+## Configuración para practicar
 
----
+No se requiere instalar nada. Para trabajar con el código de los ejemplos:
 
-## 🔗 Recursos
-
-- 📄 **Plan del curso:** [course-plan.md](./course-plan.md)
-- 🎬 **Lista de reproducción:** [YouTube – Fundamentos de Java]()
-- 🛠️ **Editores en línea:** [Replit](https://replit.com) · [JDoodle](https://www.jdoodle.com) · [OnlineGDB](https://www.onlinegdb.com)
+1. Abre [OnlineGDB](https://www.onlinegdb.com)
+2. Selecciona **Java** como lenguaje en el menú superior
+3. Copia el contenido del archivo correspondiente en `starter-files/`
+4. Pégalo en el editor y haz clic en **Run** para ver el resultado
 
 ---
 
-## 👥 Equipo
-
-**Universidad Peruana de Ciencias Aplicadas (UPC)**  
-**Carrera:** Ingeniería de Software  
-**Curso:** 1ASI0729 – Desarrollo de Aplicaciones Open Source  
-**Ciclo:** 202610  
-**NRC:** 11881  
-**Startup:** Dermacare
-
-| Rol | Integrante |
-|-----|-----------|
-| Team Leader | Contreras Torres, Arturo Valentino |
-| Integrante | Asmat Alminco, Martin Alejandro |
-| Integrante | Gallardo Morales, Carla Alejandra |
-| Integrante | Mechan Montenegro, Luciana Carolina |
-| Integrante | Ramirez Ruiz, Nickolas |
+Universidad Peruana de Ciencias Aplicadas · Ingeniería de Software · Período 202610
