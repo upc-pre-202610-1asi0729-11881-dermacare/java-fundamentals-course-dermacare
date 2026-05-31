@@ -2,7 +2,7 @@
 // Practica almacenando listas de datos y manipulando texto con String.
 
 
-public class Lesson06_Arrays {
+public class lesson06_arrays {
 
 
     public static void main(String[] args) {

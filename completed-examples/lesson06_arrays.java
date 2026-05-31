@@ -2,7 +2,7 @@
 // Ejemplo completo — así debería verse tu solución.
 
 
-public class Lesson06_Arrays {
+public class lesson06_arrays {
 
 
     public static void main(String[] args) {
