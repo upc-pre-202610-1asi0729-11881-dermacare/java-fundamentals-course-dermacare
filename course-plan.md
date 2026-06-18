@@ -15,10 +15,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ## Secuencia de Lecciones
 
-### Lección 1: ¿Qué es Java y la programación? (6 minutos)
+### Lección 1: ¿Qué es Java y la programación? (5 minutos)
 
 - **Descripción**: Aprende qué es la programación y por qué Java es uno de los lenguajes más usados en el mundo. Descubrirás cómo los programadores le dan instrucciones a las computadoras y escribirás tu primer programa en Java.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link1)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=E3kbLF2Z46I)
 - **Conceptos clave**:
   - Programar es dar instrucciones claras a una computadora
   - Java se usa para crear aplicaciones, juegos y sistemas
@@ -55,10 +55,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 4: Métodos, parámetros y salida por consola (12 minutos)
+### Lección 4: Métodos, parámetros y salida por consola (10 minutos)
 
 - **Descripción**: Aprende a organizar tu código en bloques reutilizables llamados métodos. Podrás enviarles información a través de parámetros, recibir resultados con `return` y mostrar resultados en la consola, haciendo tus programas más limpios y ordenados.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link4)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=4CRSFGUPE3A)
 - **Conceptos clave**:
   - Un método es un bloque de código que puedes llamar cuando lo necesites
   - Los métodos `void` no devuelven valor; otros sí usando `return`
@@ -69,10 +69,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 5: Clases, objetos y encapsulación (12 minutos)
+### Lección 5: Clases, objetos y encapsulación (16 minutos)
 
 - **Descripción**: Bienvenido al mundo de la Programación Orientada a Objetos. Aprenderás qué son las clases y los objetos, cómo crear instancias con constructores y cómo proteger los datos de tus clases usando encapsulación con `private`, getters y setters.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link5)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=qbM6Buf4yKw)
 - **Conceptos clave**:
   - Una clase es una plantilla; un objeto es una instancia de esa plantilla
   - Los atributos guardan información del objeto
@@ -83,10 +83,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 6: Arrays y cadenas (8 minutos)
+### Lección 6: Arrays y cadenas (6 minutos)
 
 - **Descripción**: Aprende a trabajar con colecciones de datos usando arrays y a manipular texto con los métodos de la clase `String`. Con estas herramientas podrás guardar listas de valores y procesarlos fácilmente, integrándolos con tus objetos.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link6)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=EwLdqauPVGE)
 - **Conceptos clave**:
   - Un array guarda varios valores del mismo tipo en una sola variable
   - Se accede a cada elemento por su índice, empezando desde `0`
@@ -97,7 +97,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 7: Proyecto final — Registro de estudiantes (12 minutos)
+### Lección 7: Proyecto final — Registro de estudiantes (10 minutos)
 
 - **Descripción**: En esta lección construirás un mini programa en Java que integra todos los conceptos del curso: variables, operadores, estructuras de control, métodos, clases y encapsulación. El proyecto es un sistema de registro de estudiantes con menú interactivo en consola.
 - **Enlace**: [Ver la lección](https://youtu.be/0GQmVKn19c0)
@@ -110,10 +110,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 8: Buenas prácticas y errores comunes (6 minutos)
+### Lección 8: Buenas prácticas y errores comunes (4 minutos)
 
 - **Descripción**: Cierra el curso aprendiendo cómo escribir código más limpio, legible y profesional. Revisarás los errores más frecuentes que cometen los principiantes y cómo evitarlos desde el inicio.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link8)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=tejU-jQUDFM)
 - **Conceptos clave**:
   - Usa nombres descriptivos para variables y métodos
   - Mantén una indentación consistente para que el código sea legible
