@@ -55,10 +55,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 4: Métodos, parámetros y salida por consola (10 minutos)
+### Lección 4: Métodos, parámetros y salida por consola (5 minutos)
 
 - **Descripción**: Aprende a organizar tu código en bloques reutilizables llamados métodos. Podrás enviarles información a través de parámetros, recibir resultados con `return` y mostrar resultados en la consola, haciendo tus programas más limpios y ordenados.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=4CRSFGUPE3A)
+- **Enlace**: [Ver la lección](https://youtu.be/jx1NEqhdN4g)
 - **Conceptos clave**:
   - Un método es un bloque de código que puedes llamar cuando lo necesites
   - Los métodos `void` no devuelven valor; otros sí usando `return`
@@ -69,10 +69,10 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 
 ---
 
-### Lección 5: Clases, objetos y encapsulación (16 minutos)
+### Lección 5: Clases, objetos y encapsulación (10 minutos)
 
 - **Descripción**: Bienvenido al mundo de la Programación Orientada a Objetos. Aprenderás qué son las clases y los objetos, cómo crear instancias con constructores y cómo proteger los datos de tus clases usando encapsulación con `private`, getters y setters.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=qbM6Buf4yKw)
+- **Enlace**: [Ver la lección](https://youtu.be/kWGlmwPWTjo)
 - **Conceptos clave**:
   - Una clase es una plantilla; un objeto es una instancia de esa plantilla
   - Los atributos guardan información del objeto
@@ -120,8 +120,6 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
   - No confundas `=` (asignación) con `==` (comparación)
   - Divide tu programa en métodos pequeños con una sola responsabilidad
   - Comenta tu código cuando la lógica no sea evidente
-- **Actividad final**: [Envía tu proyecto terminado](https://forms.gle/your-form)
-
 ---
 
 ## Recursos Adicionales
