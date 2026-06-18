@@ -31,7 +31,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 ### Lección 2: Variables, tipos de datos y operadores (10 minutos)
 
 - **Descripción**: Aprende a guardar información en tu programa usando variables y a realizar operaciones con ellas. Conocerás los tipos de datos más usados en Java y cómo comparar valores entre sí.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link2)
+- **Enlace**: [Ver la lección](https://youtu.be/tIkd8Kk8pPo)
 - **Conceptos clave**:
   - Una variable es una caja con nombre para guardar un valor
   - Los tipos básicos son: `int`, `String`, `double`, `boolean`
@@ -45,7 +45,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 ### Lección 3: Estructuras de control (10 minutos)
 
 - **Descripción**: Aprende a hacer que tu programa tome decisiones con `if-else` y repita acciones con los bucles `for` y `while`. Con estas herramientas tus programas podrán reaccionar de forma diferente según la situación.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link3)
+- **Enlace**: [Ver la lección](https://youtu.be/Vbn3R1P5RQk)
 - **Conceptos clave**:
   - `if` ejecuta un bloque solo si se cumple una condición
   - `else if` y `else` manejan los casos alternativos
@@ -100,7 +100,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 ### Lección 7: Proyecto final — Registro de estudiantes (12 minutos)
 
 - **Descripción**: En esta lección construirás un mini programa en Java que integra todos los conceptos del curso: variables, operadores, estructuras de control, métodos, clases y encapsulación. El proyecto es un sistema de registro de estudiantes con menú interactivo en consola.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=example-link7)
+- **Enlace**: [Ver la lección](https://youtu.be/0GQmVKn19c0)
 - **Conceptos clave**:
   - Dividir el sistema en clases claras facilita el desarrollo
   - La POO permite modelar entidades del mundo real como la clase `Estudiante`
