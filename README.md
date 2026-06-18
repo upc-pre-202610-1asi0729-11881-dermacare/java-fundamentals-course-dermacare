@@ -1,4 +1,4 @@
-# Fundamentos de Java para Principiantes — Dermacare
+# Fundamentos de Java para Principiantes
 
 Repositorio oficial del curso introductorio de programación con Java para estudiantes de secundaria, elaborado por el equipo Dermacare de la Universidad Peruana de Ciencias Aplicadas.
 
