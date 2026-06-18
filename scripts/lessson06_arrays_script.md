@@ -1,57 +1,100 @@
 # Guión — Lección 6: Arrays y cadenas
 
 
-**Duración estimada**: 8 minutos  
+He convertido tu texto a un formato de guion Markdown más limpio y profesional para la lección:
 
+# Guión — Lección 6: Arreglos (Arrays) y Métodos String
+**Duración estimada**: 7 minutos
 
----
+## INTRODUCCIÓN
 
+**LOCUTOR:** Ahora ya sabemos crear objetos para representar a un estudiante. Pero, ¿qué pasa si necesitas guardar una lista de 30 estudiantes? Declarar 30 variables diferentes sería impensable, e incluso inimaginable. Y no hablemos ya de 100 estudiantes.
 
-## Introducción (0:00 – 0:30)
-
-
-Ya sabes crear objetos para representar un estudiante. Pero ¿qué pasa si necesitas guardar una lista de 30 estudiantes? Declarar 30 variables separadas sería inmanejable. Para eso existen los arrays.
-
-
----
-
-
-## ¿Qué es un array? (0:30 – 2:30)
-
-
-Un array es una variable que guarda varios valores del mismo tipo en una sola estructura. Imagínalo como una fila de cajones numerados, donde cada cajón guarda un valor.
-
-
-```java
-String[] cursos = {"Matemática", "Comunicación", "Historia", "Ciencias"};
-```
-
-
-Para acceder a un elemento usamos su índice entre corchetes. El índice empieza en `0`, no en `1`:
-
-
-```java
-System.out.println(cursos[0]); // Matemática
-System.out.println(cursos[3]); // Ciencias
-```
-
-
-Para saber cuántos elementos tiene el array usamos `.length`:
-
-
-```java
-System.out.println(cursos.length); // 4
-```
-
+Para resolver este problema existen los **arreglos**, también conocidos como **arrays**.
 
 ---
 
+## ¿QUÉ ES UN ARREGLO?
 
-## Recorrer un array con for (2:30 – 4:00)
+**LOCUTOR:** Pero para empezar, ¿qué es exactamente un arreglo?
 
+Un arreglo es una variable que puede almacenar múltiples valores del mismo tipo dentro de una sola estructura.
 
-La combinación más poderosa es usar un bucle `for` para recorrer todos los elementos de un array:
+Imagínenlo como una fila de cajones numerados, donde cada cajón guarda un valor específico.
 
+Por ejemplo, podríamos tener un arreglo que almacene nombres de cursos, números o incluso objetos completos.
+
+---
+
+## CREANDO NUESTRO PRIMER ARREGLO
+
+**LOCUTOR:** Ahora que ya conocemos la definición, veámoslo en código.
+
+Aquí tenemos un arreglo llamado `cursos`:
+
+```java
+String[] cursos = {
+    "Matemática",
+    "Comunicación",
+    "Historia",
+    "Ciencias"
+};
+```
+
+Para crearlo, debemos indicar el tipo de dato que almacenará el arreglo. En este caso utilizamos `String`, que representa cadenas de texto.
+
+Los elementos del arreglo son:
+
+* Matemática
+* Comunicación
+* Historia
+* Ciencias
+
+---
+
+## ACCEDIENDO A LOS ELEMENTOS
+
+**LOCUTOR:** Para acceder a un elemento específico utilizamos su índice entre corchetes.
+
+Es muy importante recordar que los arreglos en Java comienzan en el índice **0**, no en el índice **1**.
+
+Cuando hablamos de índice nos referimos a la posición que ocupa cada elemento dentro del arreglo.
+
+Por ejemplo:
+
+```java
+System.out.println(cursos[0]);
+```
+
+Este código imprimirá:
+
+```text
+Matemática
+```
+
+Porque el índice 0 corresponde al primer elemento.
+
+Si queremos acceder al siguiente curso:
+
+```java
+System.out.println(cursos[1]);
+```
+
+Obtendremos:
+
+```text
+Comunicación
+```
+
+---
+
+## RECORRIENDO UN ARREGLO CON FOR
+
+**LOCUTOR:** Ahora que sabemos acceder a una posición específica, aprenderemos a recorrer todas las posiciones automáticamente utilizando un bucle `for`.
+
+El bucle `for` nos permite ingresar repetidamente a cada posición del arreglo sin tener que escribir una instrucción para cada elemento.
+
+Veamos el ejemplo:
 
 ```java
 for (int i = 0; i < cursos.length; i++) {
@@ -59,85 +102,154 @@ for (int i = 0; i < cursos.length; i++) {
 }
 ```
 
-
-Usamos `cursos.length` como condición para que el bucle se adapte automáticamente si el array cambia de tamaño.
-
-
 ---
 
+## ENTENDIENDO EL FOR
 
-## Métodos de String (4:00 – 6:00)
+**LOCUTOR:** Analicemos cada parte de esta estructura.
 
-
-Los textos en Java no son simples variables: son objetos de la clase `String`, que tiene métodos útiles para manipular texto:
-
+### Inicio
 
 ```java
-String saludo = "hola mundo";
-
-
-System.out.println(saludo.length());        // 10
-System.out.println(saludo.toUpperCase());   // HOLA MUNDO
-System.out.println(saludo.contains("mundo")); // true
+int i = 0;
 ```
 
+Comenzamos en la posición 0 porque los arreglos siempre empiezan desde ese índice.
 
-Estos métodos son muy útiles cuando trabajas con nombres, búsquedas o validaciones en tus programas.
-
-
----
-
-
-## Arrays con objetos (6:00 – 7:00)
-
-
-Los arrays no solo guardan números o textos: también pueden guardar objetos. Por ejemplo, un array de estudiantes:
-
+### Condición
 
 ```java
-Estudiante[] salon = new Estudiante[3];
-salon[0] = new Estudiante("Carlos", 16, 15.5);
-salon[1] = new Estudiante("Juan", 15, 17.0);
-salon[2] = new Estudiante("Antonio", 17, 13.5);
+i < cursos.length;
 ```
 
+La propiedad `.length` indica cuántos elementos tiene el arreglo.
 
-Y para mostrar la información de todos:
+En este caso, el ciclo continuará ejecutándose mientras existan posiciones válidas por recorrer.
 
+### Incremento
 
 ```java
-for (int i = 0; i < salon.length; i++) {
-    salon[i].mostrarInfo();
-}
+i++;
 ```
 
+Después de cada repetición, el valor de `i` aumenta en 1.
 
-Esta idea es exactamente la base del proyecto que construiremos en la siguiente lección.
+Esto permite avanzar de una posición a la siguiente.
 
+### Acceso al elemento
+
+```java
+cursos[i]
+```
+
+En cada repetición se accede automáticamente al elemento correspondiente según el valor actual de `i`.
+
+Al ejecutar el programa obtendremos:
+
+```text
+Curso 1: Matemática
+Curso 2: Comunicación
+Curso 3: Historia
+Curso 4: Ciencias
+```
+
+De esta forma podemos recorrer arreglos de cualquier tamaño con muy poco código.
 
 ---
 
+## INTRODUCCIÓN A LOS MÉTODOS STRING
 
-## Actividad (7:00 – 7:40)
+**LOCUTOR:** Ahora veamos algo más sobre los textos en Java.
 
+Aunque muchas veces los usamos como simples variables, los textos son en realidad objetos de la clase `String`.
 
-Abre el editor del enlace en la descripción. Encontrarás cinco `TODO`:
+Eso significa que poseen métodos incorporados que nos ayudan a manipular texto de forma sencilla.
 
+Supongamos que tenemos:
 
-1. Declara un array de cuatro cursos e imprime el primero y el último
-2. Recorre el array con un bucle `for`
-3. Usa tres métodos de `String` sobre un texto
-4. Declara un array de notas y calcula el promedio
-5. Ejecuta el programa y verifica los resultados
-
+```java
+String saludo = "hola";
+```
 
 ---
 
+## MÉTODO length()
 
-## Cierre (7:40 – 8:00)
+**LOCUTOR:** El método `length()` devuelve la cantidad de caracteres que contiene un texto.
+
+```java
+System.out.println(saludo.length());
+```
+
+Resultado:
+
+```text
+4
+```
+
+Porque la palabra "hola" tiene cuatro caracteres.
+
+---
+
+## MÉTODO toUpperCase()
+
+**LOCUTOR:** El método `toUpperCase()` convierte todas las letras del texto a mayúsculas.
+
+```java
+System.out.println(saludo.toUpperCase());
+```
+
+Resultado:
+
+```text
+HOLA
+```
+
+No importa si el texto original está en minúsculas; el método devolverá una nueva versión completamente en mayúsculas.
+
+---
+
+## MÉTODO contains()
+
+**LOCUTOR:** El método `contains()` nos permite verificar si una determinada cadena de texto está contenida dentro de otra.
+
+Por ejemplo:
+
+```java
+System.out.println(saludo.contains("adios"));
+```
+
+Resultado:
+
+```text
+false
+```
+
+Esto ocurre porque la palabra "adios" no se encuentra dentro del texto "hola".
+
+Este método siempre devuelve un valor booleano:
+
+* `true` si el texto existe.
+* `false` si el texto no existe.
+
+---
+
+## RETO Y DESPEDIDA
+
+**LOCUTOR:** Muy bien, chicos. Ahora les toca a ustedes.
+
+Deben abrir el editor del enlace que se encuentra en la descripción y completar los ejercicios de la actividad **5-TODO**.
+
+### Desafíos
+
+1. Declarar un arreglo de cuatro cursos e imprimir el primero y el último.
+2. Recorrer el arreglo utilizando un bucle `for`.
+3. Utilizar tres métodos de `String` sobre un texto.
+4. Declarar un arreglo de notas y calcular el promedio.
+5. Ejecutar el programa y verificar los resultados obtenidos.
+
+Practiquen cada ejercicio y experimenten modificando los valores para comprender mejor cómo funcionan los arreglos y los métodos de texto.
+
+En la siguiente lección integraremos todo lo aprendido hasta ahora en un proyecto completo: un sistema de registro de estudiantes utilizando Programación Orientada a Objetos.
 
 
-En la siguiente lección integrarás todo lo que has aprendido en un proyecto completo: un sistema de registro de estudiantes con POO.
-
-
-¡Nos vemos en la lección 7!

@@ -1,139 +1,72 @@
 # Guión — Lección 3: Estructuras de control
 
-
+# GUION DE VIDEO: LECCIÓN 3
 **Duración estimada**: 10 minutos
+## INTRODUCCIÓN
 
+**LOCUTOR:** Hola, espero que estés muy bien. Esta es la lección número tres, en la cual verás las estructuras de control.
 
----
+Como puedes observar, ya tengo un código desarrollado con el que vamos a trabajar el día de hoy, para que puedas aprender un poco más sobre este mundo de la programación.
 
-
-## Introducción (0:00 – 0:30)
-
-
-Hasta ahora tus programas ejecutan las instrucciones en orden, de arriba hacia abajo, sin detenerse. Pero los programas reales necesitan tomar decisiones y repetir acciones. Para eso existen las estructuras de control.
-
+Hasta ahora, tus programas ejecutan las instrucciones en orden, de arriba hacia abajo y sin detenerse. Sin embargo, los programas reales necesitan tomar decisiones y repetir acciones; para eso existen las estructuras de control.
 
 ---
 
+## DECISIONES CON IF-ELSE
 
-## Decisiones con if-else (0:30 – 3:30)
+**LOCUTOR:** Empezamos con las decisiones usando `if` y `else`. En este caso, la estructura `if` le dice al programa: "Si esta condición es verdadera, ejecuta este bloque de código". Si la condición es falsa, ese bloque simplemente se salta.
 
+Podemos observar lo siguiente en el código: `int nota = 13;`. Abajo tenemos: `if (nota >= 11)`, entonces el estudiante está "Aprobado".
 
-La estructura `if` le dice al programa: "si esta condición es verdadera, ejecuta este bloque de código". Si la condición es falsa, el bloque se salta.
-
-
-```java
-int nota = 13;
-
-
-if (nota >= 11) {
-    System.out.println("Aprobado");
-}
-```
-
-
-Podemos agregar `else` para manejar el caso contrario:
-
-
-```java
-if (nota >= 11) {
-    System.out.println("Aprobado");
-} else {
-    System.out.println("Desaprobado");
-}
-```
-
-
-Y si necesitamos más de dos opciones, usamos `else if`:
-
-
-```java
-if (nota >= 18) {
-    System.out.println("¡Excelente!");
-} else if (nota >= 11) {
-    System.out.println("Aprobado");
-} else {
-    System.out.println("Desaprobado");
-}
-```
-
-
-Java evalúa las condiciones de arriba hacia abajo y ejecuta el primer bloque cuya condición sea verdadera. Los demás se ignoran.
-
+También podemos agregar el `else` para manejar el caso contrario. Si la nota es mayor o igual a 11 se muestra "Aprobado", pero si es menor que 11, la salida será "Desaprobado". Los invito a ir jugando en el editor con los signos y con los valores de mayor y menor.
 
 ---
 
+## CONDICIONES MÚLTIPLES CON ELSE IF
 
-## Bucle for (3:30 – 6:00)
+**LOCUTOR:** Si necesitamos evaluar más de dos opciones, usamos la estructura `else if`.
 
+Por ejemplo: `if (nota >= 18)` imprimimos "Excelente". Luego colocamos `else if (nota >= 11)` para mostrar "Aprobado", y finalmente un `else` para "Desaprobado".
 
-Un bucle nos permite repetir un bloque de código varias veces sin escribirlo repetidamente. El bucle `for` es ideal cuando sabes exactamente cuántas veces quieres repetir algo.
-
-
-```java
-for (int i = 1; i <= 5; i++) {
-    System.out.println(i);
-}
-```
-
-
-Este bucle tiene tres partes separadas por punto y coma:
-
-
-1. `int i = 1` — se ejecuta una sola vez al inicio: crea la variable contadora.
-2. `i <= 5` — es la condición: el bucle continúa mientras sea verdadera.
-3. `i++` — se ejecuta al final de cada repetición: aumenta el contador en 1.
-
+Con estos casos prácticos vemos que Java evalúa las condiciones de arriba hacia abajo y ejecuta el primer bloque cuya condición sea verdadera; los demás bloques se ignoran por completo.
 
 ---
 
+## EL BUCLE FOR
 
-## Bucle while (6:00 – 8:30)
+**LOCUTOR:** Una vez enseñado esto, pasamos al bucle `for`. Un bucle nos permite repetir un bloque de código varias veces sin tener que escribirlo repetitivamente. El bucle `for` es ideal cuando sabes exactamente cuántas veces quieres repetir una acción.
 
+Por ejemplo, aquí queremos imprimir los números del 1 al 5. Escribimos: `for (int i = 1; i <= 5; i++)`.
 
-El bucle `while` repite un bloque mientras una condición sea verdadera. Es útil cuando no sabes de antemano cuántas veces necesitas repetir.
-
-
-```java
-int contador = 5;
-
-
-while (contador >= 1) {
-    System.out.println(contador);
-    contador--;
-}
-System.out.println("¡Despegue!");
-```
-
-
-Importante: asegúrate de que en algún momento la condición se vuelva falsa. Si no, el bucle nunca terminará y el programa se quedará colgado.
-
+Esta estructura tiene tres partes separadas por punto y coma:
+1. `int i = 1;`: Se ejecuta una sola vez al inicio y crea la variable contadora.
+2. `i <= 5;`: Es la condición. El bucle continuará mientras esta condición sea verdadera.
+3. `i++`: Se ejecuta al final de cada repetición y aumenta el contador en uno.
 
 ---
 
+## EL BUCLE WHILE
 
-## Actividad (8:30 – 9:30)
+**LOCUTOR:** Ahora pasamos al bucle `while` para realizar una cuenta regresiva. El bucle `while` repite un bloque de código mientras una condición sea verdadera. Es muy útil cuando no sabes de antemano cuántas veces necesitas repetir la acción.
 
+En el código declaramos `int contador = 5;` y aplicamos el `while (contador >= 1)`. Dentro del bloque imprimimos el valor y luego colocamos `contador--` para ir disminuyéndolo. Así, se realiza la cuenta regresiva desde el 5 hasta el 1 y al final se imprime el mensaje "¡Despegue!".
 
-Abre el editor del enlace en la descripción. Encontrarás cuatro `TODO`:
-
-
-1. Evalúa una nota con `if`, `else if` y `else`
-2. Agrega el caso "Excelente" para notas mayores o iguales a 18
-3. Usa un bucle `for` para imprimir del 1 al 5
-4. Usa un bucle `while` para hacer una cuenta regresiva del 5 al 1
-
-
-Haz clic en **Run** y verifica los resultados.
-
+Es muy importante asegurarse de que en algún momento la condición del `while` se vuelva falsa. De lo contrario, el bucle nunca terminará, el programa se quedará colgado y no funcionará. Esto es un error común, similar a cuando olvidas colocar un punto y coma o no completas bien el código. Afortunadamente, los entornos de desarrollo modernos son herramientas muy intuitivas que te permiten visualizar estos errores fácilmente.
 
 ---
 
+## ACTIVIDAD Y DESPEDIDA
 
-## Cierre (9:30 – 10:00)
+**LOCUTOR:** Como actividad, te invito a abrir el editor del enlace en la descripción, donde encontrarás todo lo necesario. El reto consiste en lo siguiente:
 
+1. Evalúa una nota usando `if`, `else if` y `else`. Agrega el caso "Excelente" para notas mayores o iguales a 18.
+2. Usa un bucle `for` para imprimir los números del 1 al 5.
+3. Usa un bucle `while` para hacer una cuenta regresiva del 5 al 1.
 
-En la siguiente lección aprenderás a organizar tu código en métodos reutilizables y a mostrar resultados de forma estructurada en la consola.
+Te puedes guiar del ejemplo que acabamos de revisar. Recuerda siempre practicar para no tener problemas al momento de programar. Una vez que hayas terminado tu código, haz clic en *Run* y verifica los resultados en la consola.
 
+Bueno, chicos, espero que esta clase haya sido beneficiosa para ustedes y que la lección haya quedado clara. Recuerden siempre practicar; si pueden imaginarlo, pueden programarlo.
 
-¡Nos vemos en la lección 4!
+En la siguiente lección aprenderás a organizar tu código en métodos reutilizables para mostrar resultados de forma estructurada y ordenada en la consola. Desde ya es importante aprender a mantener el orden y a agregar comentarios para que tu código sea intuitivo para otros programadores. Lo irás aprendiendo poco a poco.
+
+Nos vemos en la lección 4. Muchas gracias por haber estado aquí.

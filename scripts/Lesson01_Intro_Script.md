@@ -1,74 +1,50 @@
 # Guión — Lección 1: ¿Qué es Java y la programación?
 
-**Duración estimada**: 6 minutos
+# GUION DE VIDEO: LECCIÓN 1
+
+**Duración estimada**: 5 minutos
+
+## INTRODUCCIÓN
+
+**LOCUTOR:** Hola, ¿qué tal? Bienvenidos a este curso de Fundamentos de Java para principiantes. En esta primera lección responderemos a dos preguntas clave: ¿Qué es programar? y ¿Qué es Java?
+
+Para entender qué es programar, imaginen que tienen un robot en casa y quieren que prepare un vaso de jugo. Si solo le dicen: "Prepara un vaso de jugo, por favor", el robot no entenderá, porque no sabe qué es un vaso, qué es el jugo, ni cómo realizar la acción.
+
+Para que lo haga, deben darle una secuencia de pasos específicos y detallados:
+1. Agarra el vaso.
+2. Colócalo sobre la mesa.
+3. Toma la botella de jugo.
+4. Sirve el contenido en el vaso.
+
+Eso es exactamente programar: escribir un conjunto de instrucciones ordenadas para que una computadora realice una tarea específica. Como las computadoras no hablan nuestro idioma, utilizamos un lenguaje de programación para comunicarnos con ellas.
 
 ---
 
-## Introducción (0:00 – 0:40)
+## ¿QUÉ ES JAVA Y QUÉ HERRAMIENTAS SE USARÁN?
 
-Bienvenidos a este curso de fundamentos de Java. En las próximas lecciones aprenderás a programar desde cero usando uno de los lenguajes más usados en el mundo.
+**LOCUTOR:** En este curso utilizaremos Java, uno de los lenguajes de programación más populares, seguros y demandados en todo el mundo. Lo mejor es que para aprender a programar no necesitan una computadora avanzada; bastará con cualquier equipo básico y una conexión a internet.
 
-No necesitas instalar nada en tu computadora. Solo necesitas un navegador web, como el que usas todos los días para ver videos o buscar información.
-
----
-
-## ¿Qué es programar? (0:40 – 2:00)
-
-Programar es dar instrucciones claras a una computadora para que haga algo específico. Igual que cuando le explicas a alguien cómo llegar a un lugar paso a paso, un programa es una lista de pasos que la computadora sigue en orden.
-
-Esas instrucciones las escribimos usando un lenguaje de programación. Y en este curso usaremos Java.
+Para escribir y ejecutar nuestro código, utilizaremos una herramienta online y gratuita llamada **OnlineGDB**. Es un editor en la nube muy intuitivo que nos permitirá programar directamente desde el navegador sin necesidad de instalar programas complejos en la computadora.
 
 ---
 
-## ¿Qué es Java y por qué usarlo? (2:00 – 3:30)
+## ESTRUCTURA BÁSICA DE UN PROGRAMA EN JAVA
 
-Java es un lenguaje de programación creado en 1995 y sigue siendo uno de los más populares del mundo. Se usa para crear:
+**LOCUTOR:** Al abrir el editor, nos encontraremos con una estructura inicial. Todo programa en Java consta de tres partes fundamentales que debemos conocer desde el primer día:
 
-- Aplicaciones de escritorio y móviles
-- Videojuegos
-- Sistemas bancarios y empresariales
-- Aplicaciones para Android
-
-Una de sus ventajas más importantes es que el mismo código Java funciona en cualquier computadora, sin importar si tiene Windows, Mac o Linux. Por eso su lema es: *"Escribe una vez, ejecuta en cualquier lugar."*
+1. **Una clase:** En Java, todo el código debe vivir dentro de una clase. En este ejemplo inicial, la llamaremos `MiPrograma`.
+2. **El método Main:** Es el punto de partida de cualquier aplicación en Java. Cuando le damos la orden de arrancar al programa, la computadora buscará este método para saber exactamente por dónde empezar a ejecutar las instrucciones.
+3. **La instrucción de salida (`System.out.println`):** Esta es la herramienta que utilizamos para enviar mensajes a la pantalla. Todo lo que escribamos dentro de los paréntesis y entre comillas dobles se mostrará en la consola. Por ejemplo, si colocamos `"¡Hola, mundo!"` y hacemos clic en el botón *Run*, veremos ese saludo reflejado inmediatamente abajo en la consola.
 
 ---
 
-## Estructura básica de un programa Java (3:30 – 5:00)
+## RESUMEN Y RETO
 
-Todo programa en Java tiene una estructura mínima que siempre se repite. Veámosla:
+**LOCUTOR:** Repasemos los conceptos clave que hemos aprendido hoy:
+- Programar es darle un conjunto de instrucciones ordenadas a una computadora.
+- Java es el lenguaje de programación que utilizaremos a lo largo de este curso.
+- Un programa básico en Java se compone de una clase, el método `main` y la instrucción `System.out.println()`.
 
-```java
-public class MiPrograma {
-    public static void main(String[] args) {
-        System.out.println("¡Hola, mundo!");
-    }
-}
-```
+¡Ahora les toca a ustedes! Abran el editor en el enlace de la descripción, configuren el lenguaje en Java y cambien el texto dentro de las comillas para mostrar su propio mensaje personalizado en la consola. Prueben la herramienta y observen el resultado.
 
-Hay tres cosas importantes aquí:
-
-1. **La clase**: en Java, todo el código vive dentro de una clase. Por ahora piensa en ella como una caja que contiene tu programa.
-2. **El método main**: es el punto de entrada. Cuando ejecutas el programa, Java busca este método y empieza a ejecutar desde ahí.
-3. **System.out.println()**: es la instrucción que imprime texto en la pantalla. Lo que escribas entre las comillas aparecerá en la consola.
-
----
-
-## Actividad (5:00 – 5:40)
-
-Ahora te invito a escribir tu primer programa. Abre el editor en línea del enlace que está en la descripción de esta lección.
-
-Verás que ya tiene la estructura base lista. Tu tarea es completar los tres `TODO` que aparecen en el código:
-
-1. Imprime el mensaje `¡Hola, mundo!`
-2. Imprime tu nombre con el mensaje `Mi nombre es: ...`
-3. Imprime `Estoy aprendiendo Java`
-
-Haz clic en **Run** y observa los resultados en la consola.
-
----
-
-## Cierre (5:40 – 6:00)
-
-En la siguiente lección aprenderás a guardar información en tu programa usando variables y a trabajar con distintos tipos de datos.
-
-¡Nos vemos en la lección 2!
+Muchas gracias por acompañarme en esta introducción. ¡Nos vemos en la lección 2!
