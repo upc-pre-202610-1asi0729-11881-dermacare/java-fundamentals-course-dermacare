@@ -4,7 +4,7 @@
 **Duración estimada**: 10 minutos
 ## INTRODUCCIÓN
 
-**LOCUTOR:** Hola, espero que estés muy bien. Esta es la lección número tres, en la cual verás las estructuras de control.
+**LOCUTOR:** Esta es la lección número tres, en la cual verás las estructuras de control.
 
 Como puedes observar, ya tengo un código desarrollado con el que vamos a trabajar el día de hoy, para que puedas aprender un poco más sobre este mundo de la programación.
 
