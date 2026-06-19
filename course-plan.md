@@ -31,7 +31,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 ### Lección 2: Variables, tipos de datos y operadores (10 minutos)
 
 - **Descripción**: Aprende a guardar información en tu programa usando variables y a realizar operaciones con ellas. Conocerás los tipos de datos más usados en Java y cómo comparar valores entre sí.
-- **Enlace**: [Ver la lección](https://youtu.be/tIkd8Kk8pPo)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=vCf-iMMC2C8)
 - **Conceptos clave**:
   - Una variable es una caja con nombre para guardar un valor
   - Los tipos básicos son: `int`, `String`, `double`, `boolean`
@@ -45,7 +45,7 @@ Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a
 ### Lección 3: Estructuras de control (10 minutos)
 
 - **Descripción**: Aprende a hacer que tu programa tome decisiones con `if-else` y repita acciones con los bucles `for` y `while`. Con estas herramientas tus programas podrán reaccionar de forma diferente según la situación.
-- **Enlace**: [Ver la lección](https://youtu.be/Vbn3R1P5RQk)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=aIus1O9h5-8)
 - **Conceptos clave**:
   - `if` ejecuta un bloque solo si se cumple una condición
   - `else if` y `else` manejan los casos alternativos
