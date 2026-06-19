@@ -1,87 +1,135 @@
-# Guión — Lección 4: Métodos, parámetros y salida por consola
+# Guión — Lección 4: Métodos en Java
 
 # GUION DE VIDEO: LECCIÓN 4
+
 **Duración estimada**: 10 minutos
+
 ## INTRODUCCIÓN
 
-**LOCUTOR:** ¡Hola a todos! Bienvenidos a la lección número cuatro. Hoy vamos a aprender sobre métodos, parámetros y cómo mostrar resultados por la consola en Java.
+**LOCUTOR:** Imagina que tienes que saludar a 10 estudiantes distintos.
 
-Hasta ahora hemos escrito todo nuestro código dentro de un solo lugar, pero a medida que tus programas crecen, necesitas una forma de organizar y reutilizar tu código. Para eso sirven los métodos.
+Podrías escribir 10 veces `System.out.println("Hola");`.
 
-Imaginen que un método es como una **receta**. Tiene un nombre, recibe ciertos ingredientes (que en programación llamamos **parámetros**) y al final te da un resultado. Lo mejor de los métodos es que los defines una sola vez y los puedes usar miles de veces.
+Pero eso es repetitivo y difícil de mantener.
 
----
+Así que la solución son los métodos: bloques de código reutilizables que puedas llamarlos cuando los necesites.
 
-## MÉTODOS SIN RETORNO (VOID) Y PARÁMETROS
+Pero primero, ¿qué es un método?
 
-**LOCUTOR:** Vamos a ver nuestro primer ejemplo en el editor. Vamos a crear un método para saludar.
+Un método es como una receta. Tiene nombre, puede recibir ingredientes, que serían parámetros, y también puede devolver un resultado.
 
-Escribimos: `public static void saludar(String nombre)`.
+Una vez que lo defines, puedes usarlo tantas veces como quieras.
 
-Vamos a descomponer esto para entenderlo por partes:
-- **`public static`**: Por ahora, quédense con que es la forma en la que le damos acceso al método dentro de nuestro programa.
-- **`void`**: Significa "vacío". Le dice a Java que este método va a realizar una acción (como imprimir en pantalla), pero no va a regresar ningún valor matemático o dato para guardar.
-- **`saludar`**: Es el nombre que le damos a nuestra receta.
-- **`String nombre`**: Este es el ingrediente o **parámetro**. Le estamos diciendo que cuando alguien use este método, tiene que entregarnos un texto con un nombre.
-
-Dentro de las llaves del método, ponemos la acción: `System.out.println("Hola, " + nombre + "!");`.
-
-Para usarlo, vamos a nuestro método `main` principal y simplemente llamamos a la receta escribiendo: `saludar("Valeria");`. Al darle a *Run*, el programa busca el método, reemplaza la variable con el nombre que le pasamos e imprime en la consola: `"Hola, Valeria"`.
+Para ilustrarlo un poco mejor, aquí ya podemos observar la siguiente función, la cual es un saludo.
 
 ---
 
-## MÉTODOS CON RETORNO (RETURN)
+## PARTES DE UN MÉTODO
 
-**LOCUTOR:** ¿Qué pasa si queremos que el método calcule algo y nos devuelva ese resultado para usarlo más adelante? En ese caso, reemplazamos la palabra `void` por el tipo de dato que queremos recibir y usamos la palabra clave `return`.
+**LOCUTOR:** De aquí rescatamos cuatro aspectos fundamentales.
 
-Vamos a crear un método para sumar dos números enteros:
+El primero es `public static void`, el cual inicia la función. Por ahora, este siempre escríbelo así. Lo entenderás mucho mejor más adelante.
 
-`public static int sumar(int a, int b) {`
-`    return a + b;`
-`}`
+Luego tenemos el `void`. Significa que el método no devuelve como tal ningún valor; solo ejecuta instrucciones.
 
-Aquí cambiamos `void` por `int`, lo que significa que este método se compromete a devolver un número entero. Recibe dos ingredientes: `int a` e `int b`. Y con `return a + b;`, hace el cálculo y envía el resultado de vuelta.
+Luego tenemos `saludar`, el texto que está al costado del paréntesis. Este es el nombre del método.
 
-¿Cómo lo usamos en el `main`? Podemos guardar ese resultado en una variable:
-`int resultado = sumar(4, 10);`
-
-Y luego lo imprimimos de la forma que ya conocemos:
-`System.out.println(resultado);`
-
-Al ejecutarlo, la consola nos mostrará el número `14`.
+Y por último tenemos `String nombre`, que es el parámetro. Es la información que le enviamos al método cuando lo llamamos.
 
 ---
 
-## MÉTODOS CON RETORNO BOOLEANO
+## MÉTODOS CON RETURN
 
-**LOCUTOR:** Los métodos también pueden devolver valores de tipo `boolean`, es decir, responder únicamente con un **SÍ** o un **NO** (`true` o `false`). Esto es perfecto para tomar decisiones en tus programas.
+**LOCUTOR:** Ahora veamos un poco mejor lo que son los métodos con `return`.
 
-Por ejemplo, creemos un método para verificar si alguien es mayor de edad:
+Un método con `return` es aquel que necesita devolver un resultado.
 
-`public static boolean esMayor(int numero) {`
-`    return numero >= 18;`
-`}`
+Para ello, reemplazamos `void` por el tipo de dato que vamos a retornar y usamos la palabra `return`.
 
-Este método devuelve un `boolean` y recibe una edad. Evalúa la condición y devuelve `true` si es mayor o igual a 18, o `false` si es menor. Si llamamos a `esMayor(20)`, nos devolverá `true`. Si llamamos a `esMayor(16)`, nos devolverá `false`.
+Veamos un ejemplo.
+
+Tenemos acá la función que se llama `sumar`.
+
+Vemos que pide de parámetros `a` y `b`, y luego hace un `return` de la suma de esas variables.
+
+Para usar este método y ver el resultado en la consola, se hace lo siguiente: se puede inicializar una variable, la cual llamamos `resultado`, que es de tipo entero, y lo igualamos a la función con los parámetros correspondientes, para luego que esta pueda ser impresa.
+
+Esto, ¿qué nos quiere decir?
+
+Bueno, que el valor que devuelve `return` lo podemos guardar en una variable o también podemos imprimirlo directamente.
 
 ---
 
-## ¿DÓNDE VAN LOS MÉTODOS? Una regla muy importante
+## MÉTODOS CON RETURN BOOLEANO
 
-**LOCUTOR:** Presten mucha atención a esto, ya que es uno de los errores más comunes cuando se empieza a programar en Java: **Los métodos van dentro de la clase, pero fuera del método `main`.**
+**LOCUTOR:** Ahora veamos métodos pero con retorno booleano.
 
-No puedes crear un método dentro de otro método. Tienen que estar separados, uno abajo del otro, pero todos contenidos dentro de las llaves de la clase principal (`public class Main`). No se preocupen por el orden en el que los escriban fuera del `main`, ¡Java es lo suficientemente inteligente como para encontrarlos solos!
+Ya habíamos visto anteriormente que existen métodos que tienen un `return` y vimos el ejemplo con números enteros.
+
+Pues ahora también podemos saber que pueden retornar un booleano, lo cual es útil para hacer evaluaciones.
+
+Veamos un ejemplo.
+
+Aquí tenemos la función que se llama `esMayor`, que es de tipo `boolean` y que recibe de parámetro un número entero llamado `edad`.
+
+Luego tenemos el `return`, el cual devolverá un verdadero o falso dependiendo de si la condición que se encuentra adentro cumple o no cumple.
+
+Ahora en el `main`, sería inicializar la variable `mayor`, la cual para este caso sería un booleano, y la igualamos a la función, que justamente también devuelve un valor booleano, para luego poder imprimirlo en la consola.
 
 ---
 
-## RETO Y DESPEDIDA
+## PRINT Y PRINTLN
 
-**LOCUTOR:** Como actividad para la clase de hoy, ingresen al editor online utilizando el enlace que está en la descripción. El reto consiste en:
+**LOCUTOR:** Ya conoces el `System.out.println`, el cual imprime una línea y baja al siguiente renglón.
 
-1. Crear un método propio que reciba un parámetro y realice una acción.
-2. Crear un método con `return` para realizar una operación matemática simple.
-3. Llamar a ambos métodos desde el `main` e imprimir sus resultados para comprobar que funcionen de forma correcta.
+Sin embargo, acá tenemos una variante útil: `System.out.print`.
 
-Practiquen mucho con la estructura y no olviden los puntos y comas al final de las instrucciones dentro del `main`.
+Este imprime sin bajar de línea.
 
-Muchas gracias por acompañarme en esta cuarta lección. Con esto ya saben cómo estructurar y modular su código como verdaderos profesionales. ¡Nos vemos en la siguiente lección!
+Por ejemplo, aquí tenemos el `print` "Hola" y el `print` "Mundo".
+
+Como no hay ninguna indicación de salto de línea por el `print`, ya que no es un `println`, el resultado será la cadena de texto impresa en la misma línea.
+
+---
+
+## CONCATENACIÓN DE TEXTO Y VARIABLES
+
+**LOCUTOR:** Ahora también podemos combinar textos con variables usando el operador `"+"`.
+
+Por ejemplo, tenemos el `String nombre = "Carlos"` y el entero `nota`, que vale 16.
+
+Entonces, cuando lo imprimamos, podemos juntarlos todos en una fila y combinar las variables con el operador `"+"`.
+
+De esta forma podremos mostrar mensajes más dinámicos utilizando los valores almacenados en nuestras variables.
+
+---
+
+## DÓNDE SE COLOCAN LOS MÉTODOS
+
+**LOCUTOR:** Ahora veamos dónde se colocan los métodos.
+
+En Java, los métodos se definen dentro de la clase, pero fuera del método `main`.
+
+El orden en que los defines no importa.
+
+Puedes llamar a un método que está definido más abajo en el archivo.
+
+En este ejemplo podemos observar cómo está definida la función `saludar` antes que el `main`, para que luego en el `main` se llame al método que ya se ha definido arriba.
+
+---
+
+## ACTIVIDAD Y DESPEDIDA
+
+**LOCUTOR:** Ahora abre el editor del enlace en la descripción, donde encontrarás 6 TODO, los cuales se muestran en pantalla.
+
+Tu misión es resolverlos.
+
+Recuerda revisar los ejemplos vistos durante la clase y aplicar los conceptos de métodos, parámetros, valores de retorno y concatenación.
+
+Una vez que termines, ejecuta tu código y verifica los resultados en la consola.
+
+En la siguiente lección daremos el salto a la Programación Orientada a Objetos.
+
+Aquí aprenderás qué son las clases y los objetos, y cómo proteger la información usando encapsulación.
+
+¡Gracias!

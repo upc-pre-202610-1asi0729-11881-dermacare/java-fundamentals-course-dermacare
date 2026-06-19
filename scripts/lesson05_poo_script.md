@@ -1,170 +1,235 @@
-
-# Guión — Lección 5: Clases, Objetos y Encapsulación
+# Guión — Lección 5: Programación Orientada a Objetos y Encapsulación
 
 # GUION DE VIDEO: LECCIÓN 5
-**Duración estimada**: 16 minutos
+
+**Duración estimada**: 10 minutos
 
 ## INTRODUCCIÓN
 
-**LOCUTOR:** ¡Hola a todos! Bienvenidos a la lección número cinco. Hoy entraremos al fascinante mundo de la Programación Orientada a Objetos, enfocándonos en tres pilares fundamentales: **Clases, Objetos y Encapsulación**. Además, aprenderemos sobre **Constructores** y los métodos **Getter** y **Setter**.
+**LOCUTOR:** Muy bien. Hasta ahora hemos trabajado con variables sueltas: una para el nombre, otra para la edad y otra para el promedio.
 
-Hasta ahora hemos aprendido a estructurar el código mediante métodos sueltos, pero en los programas del mundo real necesitamos modelar elementos de la vida cotidiana. La Programación Orientada a Objetos nos permite agrupar datos y comportamientos en un solo lugar.
+Pero en el mundo real, esos datos pertenecen a una misma entidad: un estudiante.
 
----
-
-## ¿QUÉ ES UNA CLASE Y UN OBJETO?
-
-**LOCUTOR:** Para entenderlo de forma sencilla, piensen en una **clase** como el plano de una casa o el molde para hacer galletas. El molde define la forma y el tamaño que tendrán, pero no es una galleta real.
-
-Por otro lado, un **objeto** es la galleta física que creas usando ese molde. Puedes usar el mismo molde para crear muchas galletas individuales; cada una es un objeto independiente.
-
-Vamos al editor para definir nuestra primera clase: una clase llamada `Estudiante`.
-
-Toda clase se compone principalmente de tres elementos:
-
-1. **Atributos:** Son los datos o características que tiene el objeto (por ejemplo: nombre, edad o promedio).
-2. **Constructor:** Es el mecanismo que define cómo se crea un estudiante nuevo.
-3. **Métodos:** Son las acciones o comportamientos que el objeto puede realizar (como mostrar su información).
-
-Para empezar, definimos los atributos usando la palabra clave `private` para proteger la información.
-
-### ESTRUCTURA DE LA CLASE
-
-```java
-class Estudiante {
-    private String nombre;
-    private int edad;
-    private double promedio;
-}
-```
+La Programación Orientada a Objetos nos permite modelar esa realidad en código.
 
 ---
 
-## EL CONSTRUCTOR: LA FÁBRICA DE OBJETOS
+## ¿QUÉ ES UNA CLASE?
 
-**LOCUTOR:** El constructor es como la línea de producción en una fábrica de galletas: se encarga de recibir los ingredientes (los parámetros de entrada) y entregarte una galleta terminada y lista para usar.
+**LOCUTOR:** ¿Qué es una clase?
 
-Un constructor tiene dos reglas obligatorias en Java:
+Una clase es una plantilla que describe cómo es un tipo de objeto.
 
-1. Debe llamarse exactamente igual que la clase (respetando mayúsculas y minúsculas).
-2. No tiene ningún tipo de retorno (ni siquiera la palabra `void`).
+Define qué información tiene, que serían los atributos, y qué puede hacer, que serían los métodos.
 
-Escribamos el constructor para nuestra clase:
+Piénsalo de esta forma: una clase es como el molde de una galleta.
 
-```java
-public Estudiante(String nombre, int edad, double promedio) {
-    this.nombre = nombre;
-    this.edad = edad;
-    this.promedio = promedio;
-}
-```
+Con ese molde puedes hacer muchas galletas, todas con la misma forma, pero con decoraciones distintas.
 
-**LOCUTOR:** Presten atención a la palabra clave `this`. La usamos para decirle a Java:
+Veamos un ejemplo.
 
-> "Asigna el valor del parámetro de entrada al atributo de este objeto específico que estoy creando en este momento".
+Tenemos la clase `Estudiante`.
 
-Así evitamos confusiones si los nombres son idénticos.
+Tiene atributos, los cuales son: `nombre` de tipo `String`, `edad` de tipo entero y `promedio` de tipo `double`.
+
+Esta clase describe a un estudiante, ya que tiene nombre, edad y promedio.
 
 ---
 
-## ENCAPSULACIÓN Y ATRIBUTOS PRIVADOS
+## ¿QUÉ ES UN OBJETO?
 
-**LOCUTOR:** La encapsulación consiste en ocultar los detalles internos de un objeto y proteger sus datos de modificaciones externas descontroladas.
+**LOCUTOR:** Ahora, en programación, ¿qué es un objeto?
 
-Piensen en un automóvil: el motor está protegido bajo el capó. Ustedes no meten las manos directamente en los pistones mientras conducen; en su lugar, interactúan de forma segura a través del volante y los pedales.
+Un objeto es una instancia de una clase.
 
-En Java, esto lo logramos marcando los atributos como `private`. Al hacerlo, nadie fuera de la clase `Estudiante` puede modificar directamente la nota o el nombre de forma malintencionada o errónea.
+Una galleta hecha con ese molde, por ejemplo.
 
-Si alguien intenta escribir:
+Para crear un objeto usamos la palabra `new`.
 
-```java
-estudiante.promedio = 100;
-```
+Veámoslo.
 
-desde otra parte del programa, Java lanzará un error de compilación.
+Muy bien. Aquí tenemos ya la clase creada arriba, como se puede observar.
+
+La clase es `Estudiante`.
+
+Dentro ya del `main`, es donde hacemos la instancia con el `new` que hemos mencionado anteriormente para crear este nuevo objeto.
+
+Luego le modificamos las variables accediendo mediante un punto.
+
+A esos atributos podemos acceder escribiendo el nombre del objeto, seguido de un punto y luego el nombre del atributo, tal como fue definido anteriormente.
+
+Y así lo hicimos con `nombre`, con `edad` y con `promedio`.
+
+---
+
+## EL CONSTRUCTOR
+
+**LOCUTOR:** Ahora pasemos a hablar del constructor.
+
+Sabemos que asignar valores a los atributos puede ser un poco tedioso.
+
+Aquí en nuestro ejemplo lo hicimos con tres atributos, pero imaginen cuando ampliemos la cantidad de atributos o queramos hacerlo muchas veces.
+
+Para eso se creó la lógica del constructor.
+
+El constructor es básicamente un método especial que inicializa el objeto con datos desde el momento en que este es creado.
+
+Aquí, como podemos observar en el código, tenemos `Estudiante` y este mismo constructor recibe todos los atributos definidos previamente dentro de la clase.
+
+Luego, dentro del constructor, se realiza la asignación de valores.
+
+Aquí la palabra `this` se refiere al objeto actual, específicamente a los atributos del objeto actual.
+
+Ahora que sabemos esto, podemos crear un objeto en una sola línea, como se puede observar aquí mismo.
+
+Muy bien.
+
+Vemos aquí que tenemos `"Carlos"`, `16` y `15.5`.
+
+Si se dan cuenta, el orden en el cual se han establecido estos valores en el constructor inicia primero por `"Carlos"`.
+
+La razón es porque en la clase `Estudiante` hemos colocado primero el atributo `nombre`.
+
+Si seguimos esta lógica, podremos crear cualquier otro estudiante utilizando el mismo constructor.
+
+Como ya hemos dicho, el constructor es el mismo para toda instancia de la clase.
+
+Por lo tanto, puedo hacerlo muchas veces.
+
+Así como tengo aquí `estudiante2`, puedo hacerlo nuevamente con `estudiante3`.
+
+La estructura `new Estudiante(...)` seguirá siendo la misma cada vez que intentemos crear un objeto de la clase `Estudiante`.
+
+También puede ocurrir que los valores sean exactamente los mismos.
+
+Aquí tengo `"Juan"`, `16` y `15.5`.
+
+Es un caso posible.
+
+Sin embargo, siguen siendo objetos distintos, ya que se almacenan en variables diferentes, como `estudiante2` y `estudiante3`.
+
+Le damos a **Run** para corroborar que todo esté en orden y efectivamente funciona correctamente.
+
+---
+
+## ENCAPSULACIÓN
+
+**LOCUTOR:** Vale, pero ahora hay un problema.
+
+Cualquiera podría cambiar el promedio de un estudiante a un valor inválido como `50` o `-3`.
+
+Aquí es donde entra la encapsulación.
+
+La encapsulación protege los datos restringiendo el acceso directo a los atributos.
+
+Para encapsular, marcamos los atributos como `private`.
+
+Listo.
+
+Viendo el ejemplo un poco más a detalle, observamos que ahora el atributo `promedio` tiene delante la palabra `private`.
+
+Ahora ya nadie puede acceder directamente a `promedio` desde fuera de la clase.
+
+Para ello debemos definir métodos que nos permitan acceder a la información de manera controlada.
+
+Estos métodos se llaman **getter** y **setter**.
 
 ---
 
 ## GETTERS Y SETTERS
 
-**LOCUTOR:** Si los atributos son privados, ¿cómo hacemos para verlos o modificarlos de forma segura? Para eso creamos métodos públicos conocidos como **Getters** y **Setters**, que actúan como las compuertas reguladas del objeto.
+**LOCUTOR:** Aquí tenemos un getter.
 
-### El Getter (Leer información)
+Los getters tienen la característica de iniciar con la palabra `get`, seguida del nombre del atributo que queremos obtener.
 
-Un Getter funciona como una ventana que te permite ver lo que hay dentro de una caja cerrada, pero sin tocarlo ni alterarlo.
+En este caso tenemos `getPromedio()`.
 
-Su nombre siempre empieza con la palabra `get` seguida del nombre del atributo en mayúscula, no recibe parámetros y devuelve el valor correspondiente.
+Al ser un getter, necesitamos una función con `return`, ya que queremos devolver el valor almacenado en el atributo `promedio`.
 
-```java
-public String getNombre() {
-    return nombre;
-}
+Luego tenemos el setter.
 
-public int getEdad() {
-    return edad;
-}
+Explicándolo un poco más, este recibe un parámetro.
 
-public double getPromedio() {
-    return promedio;
-}
-```
+Esto se debe a que justamente buscamos modificar el valor de nuestros atributos.
 
-### El Setter con Validación (Modificar información con reglas)
+Pero antes de hacerlo, podemos pasar por ciertas validaciones.
 
-Un Setter funciona como un guardia de seguridad en la puerta de entrada: revisa el valor antes de permitir que se guarde en el atributo.
+Como puede ser este `if`.
 
-Si el valor no cumple con las reglas establecidas, se rechaza y no se guarda.
+Es una validación bastante sencilla que verifica que el promedio sea mayor que cero y menor o igual que veinte.
 
-Creemos un Setter para el promedio, asegurándonos de que la nota ingresada esté en el rango correcto (entre 0 y 20):
+De no cumplir esta condición, se genera un mensaje de error.
 
-```java
-public void setPromedio(double promedio) {
-    if (promedio >= 0 && promedio <= 20) {
-        this.promedio = promedio;
-    } else {
-        System.out.println("Error: El promedio debe estar entre 0 y 20.");
-    }
-}
-```
+Perfecto.
 
-**LOCUTOR:** De este modo, si alguien intenta asignar un promedio inválido como `25.0`, nuestro objeto detendrá la acción y protegerá la integridad de sus datos.
+Entonces, como pudieron notar, el setter actúa como un guardián.
+
+Solo acepta valores válidos.
+
+Si el dato no cumple con el rango establecido, simplemente no asignará el nuevo valor.
+
+Esto es muy importante dentro del concepto de encapsulación.
 
 ---
 
-## MÉTODOS DE COMPORTAMIENTO: mostrarInfo()
+## UTILIZANDO EL SETTER
 
-**LOCUTOR:** Finalmente, añadiremos un método de comportamiento llamado `mostrarInfo()`.
+**LOCUTOR:** Ahora, pasando a la consola, tenemos propuesto el método `setPromedio()`.
 
-A diferencia de los atributos (que son lo que el objeto es), los métodos son lo que el objeto puede hacer.
+Lo que hará este método será cambiar el valor de `promedio`.
 
-En este caso, el estudiante imprimirá de forma ordenada sus propios datos en la consola:
+Inicialmente era `15.5`, pero ahora lo cambiaremos a `15`.
 
-```java
-public void mostrarInfo() {
-    System.out.println("----- Información del Estudiante -----");
-    System.out.println("Nombre: " + nombre);
-    System.out.println("Edad: " + edad);
-    System.out.println("Promedio: " + promedio);
-}
-```
+Le damos a **Run** y efectivamente el programa se ejecuta correctamente.
 
 ---
 
-## RETO Y DESPEDIDA
+## MÉTODOS DE BUENA PRÁCTICA
 
-**LOCUTOR:** Como actividad para consolidar lo aprendido hoy, abran el editor online con el enlace que se encuentra en la descripción.
+**LOCUTOR:** Ahora veamos un método muy utilizado por buena práctica: `mostrarInfo()`.
 
-El desafío de esta lección consiste en:
+Este método tiene como objetivo mostrar la información del objeto en consola.
 
-1. Crear la clase `Estudiante` con sus tres atributos privados.
-2. Definir correctamente su constructor utilizando la palabra clave `this`.
-3. Implementar sus respectivos métodos Getters y Setters, asegurando que el Setter incluya la validación para el promedio.
-4. Crear el método `mostrarInfo()` para visualizar los resultados en pantalla.
+Aquí tenemos el ejemplo.
 
-Tómense su tiempo para estructurar cada bloque, respetando las llaves y la ubicación de cada método dentro de la clase.
+Tenemos la función `mostrarInfo()` que pertenece a la clase `Estudiante`.
 
-Practicar la Programación Orientada a Objetos es el paso definitivo para programar a gran escala.
+Dentro de esta función definimos un `System.out.println()` y mostramos los atributos que queremos visualizar.
 
-Muchas gracias por acompañarme en esta quinta lección.
+Muy bien.
 
-**¡Nos vemos en el próximo video!**
+Para utilizar este método desde el `main`, lo llamamos de la siguiente manera:
+
+`estudiante.mostrarInfo();`
+
+En este caso no enviamos ningún parámetro, ya que el método no lo requiere.
+
+Esto es posible porque el método está definido dentro de la clase y puede acceder directamente a las variables que pertenecen al propio objeto.
+
+Como esos atributos ya fueron inicializados mediante el constructor, podemos utilizarlos sin ningún problema dentro de este contexto.
+
+---
+
+## ACTIVIDAD Y DESPEDIDA
+
+**LOCUTOR:** Ahora abre el editor del enlace en la descripción.
+
+Ahí encontrarás cinco TODO.
+
+Tu misión será resolverlos.
+
+1. Crea la clase `Estudiante` con atributos privados, constructor, getters, setter con validación y el método `mostrarInfo()`.
+2. Crea un objeto con los datos `"Carlos"`, `16` y `15.5`.
+3. Llama a `mostrarInfo()` para ver los datos iniciales.
+4. Cambia el promedio a `18` usando el setter y muestra la información nuevamente.
+5. Intenta asignar `25.0` y observa qué ocurre.
+
+No se olviden de resolver los ejercicios propuestos, ya que son importantísimos para poder afrontar los ejercicios de las siguientes clases.
+
+Tengan en cuenta que estos conceptos también forman parte de las bases fundamentales de la programación y les ayudarán a seguir desarrollando su camino profesional.
+
+Perfecto, chicos. Felicitaciones por haber llegado hasta aquí.
+
+En la siguiente lección aprenderás a trabajar con arrays para guardar listas de datos y a manipular textos utilizando los métodos de la clase `String`.
+
+Nos vemos en la clase seis.
