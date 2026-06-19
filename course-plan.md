@@ -2,7 +2,7 @@
 
 ## Resumen del Curso
 
-Este curso de aproximadamente 76 minutos introduce a estudiantes de secundaria a los fundamentos de la programación con Java, incluyendo los conceptos esenciales de la Programación Orientada a Objetos (POO). **¡No requiere descargas ni instalaciones!** Solo necesitas abrir tu navegador web.
+Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a los fundamentos de la programación con Java, incluyendo los conceptos esenciales de la Programación Orientada a Objetos (POO). **¡No requiere descargas ni instalaciones!** Solo necesitas abrir tu navegador web.
 
 **Duración total**: ~60 minutos  
 **Público objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación  
