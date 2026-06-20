@@ -2,7 +2,7 @@
 
 ## Resumen del Curso
 
-Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a los fundamentos de la programación con Java, incluyendo los conceptos esenciales de la Programación Orientada a Objetos (POO). **¡No requiere descargas ni instalaciones!** Solo necesitas abrir tu navegador web.
+Este curso de 60 minutos introduce a estudiantes de secundaria a los fundamentos de la programación con Java, incluyendo los conceptos esenciales de la Programación Orientada a Objetos (POO). **¡No requiere descargas ni instalaciones!** Solo necesitas abrir tu navegador web.
 
 **Duración total**: 60 minutos  
 **Público objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación  
@@ -24,7 +24,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - Java se usa para crear aplicaciones, juegos y sistemas
   - Todo programa Java necesita una clase y un método `main`
   - `System.out.println()` imprime texto en la consola
-- **Actividad**: [Abrir ejercicio en OnlineGDB — Hola mundo](https://www.onlinegdb.com) — ¡No necesitas registrarte!
+- **Actividad**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡No necesitas registrarte!
 
 ---
 
@@ -38,7 +38,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - Operadores aritméticos: `+`, `-`, `*`, `/`, `%`
   - Operadores relacionales: `>`, `<`, `==`, `!=`, `>=`, `<=`
   - El resultado de una comparación es siempre `true` o `false`
-- **Práctica**: [Abrir ejercicio en OnlineGDB — Variables y operadores](https://www.onlinegdb.com) — ¡Inicio inmediato!
+- **Práctica**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡Inicio inmediato!
 
 ---
 
@@ -51,7 +51,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - `else if` y `else` manejan los casos alternativos
   - El bucle `for` repite una acción un número fijo de veces
   - El bucle `while` repite mientras una condición sea verdadera
-- **Práctica**: [Abrir ejercicio en OnlineGDB — Control de flujo](https://www.onlinegdb.com) — ¡No necesitas registrarte!
+- **Práctica**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡No necesitas registrarte!
 
 ---
 
@@ -65,7 +65,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - Los parámetros permiten enviar información al método
   - `System.out.println()` muestra resultados en la consola
   - Reutilizar código con métodos evita repetirse y reduce errores
-- **Práctica**: [Abrir ejercicio en OnlineGDB — Métodos](https://www.onlinegdb.com) — ¡Inicio rápido!
+- **Práctica**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡Inicio rápido!
 
 ---
 
@@ -79,7 +79,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - El constructor inicializa el objeto con datos al crearlo
   - `private` impide que otros accedan directamente al atributo
   - Los getters permiten leer y los setters permiten modificar atributos privados
-- **Práctica**: [Abrir ejercicio en OnlineGDB — Clases y encapsulación](https://www.onlinegdb.com) — ¡No necesitas registrarte!
+- **Práctica**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡No necesitas registrarte!
 
 ---
 
@@ -93,7 +93,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - `String` tiene métodos útiles: `.length()`, `.toUpperCase()`, `.contains()`
   - Los bucles `for` son ideales para recorrer arrays
   - Los arrays se pueden combinar con objetos para representar listas del mundo real
-- **Práctica**: [Abrir ejercicio en OnlineGDB — Arrays y cadenas](https://www.onlinegdb.com) — ¡Inicio rápido!
+- **Práctica**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡Inicio rápido!
 
 ---
 
@@ -106,7 +106,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
   - La POO permite modelar entidades del mundo real como la clase `Estudiante`
   - Un menú con `switch` organiza las opciones del usuario de forma clara
   - Validar datos hace el programa más robusto
-- **Proyecto final**: [Crear tu registro de estudiantes en OnlineGDB](https://www.onlinegdb.com) — ¡Guarda y comparte!
+- **Proyecto final**: [Abrir  OnlineGDB](https://www.onlinegdb.com) — ¡Guarda y comparte!
 
 ---
 
@@ -156,8 +156,7 @@ NRC 11881
 **Integrantes del equipo**:
 - Asmat Alminco, Martin Alejandro (u202416272)
 - Contreras Torres, Arturo Valentino (u202414802)
-- Gallardo Morales, Carla Alejandra (u202414970)
 - Mechan Montenegro, Luciana Carolina (u20241b843)
 - Ramirez Ruiz, Nickolas (u202415551)
 
-**Fecha de entrega**: [Fecha]
+**Fecha de entrega**: 20/06/2026
