@@ -1,6 +1,6 @@
 # Fundamentos de Java para Principiantes
 
-Repositorio oficial del curso introductorio de programación con Java para estudiantes de secundaria, elaborado por el equipo Dermacare de la Universidad Peruana de Ciencias Aplicadas.
+Repositorio oficial del curso introductorio de programación con Java para estudiantes de secundaria.
 
 ## Descripción
 
@@ -67,5 +67,3 @@ No se requiere instalar nada. Para trabajar con el código de los ejemplos:
 4. Pégalo en el editor y haz clic en **Run** para ver el resultado
 
 ---
-
-Universidad Peruana de Ciencias Aplicadas · Ingeniería de Software · Período 202610
