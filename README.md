@@ -6,7 +6,7 @@ Repositorio oficial del curso introductorio de programación con Java para estud
 
 Este curso enseña los fundamentos de Java y la Programación Orientada a Objetos (POO) a través de 8 lecciones cortas en video. No requiere instalar ningún programa: todo se trabaja directamente desde el navegador.
 
-- **Duración total**: ~76 minutos
+- **Duración total**: 60 minutos
 - **Público objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación
 - **Herramientas necesarias**: Solo un navegador web (Chrome, Firefox, Safari o Edge)
 - **Editor en línea**: [OnlineGDB](https://www.onlinegdb.com)
