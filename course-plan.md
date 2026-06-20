@@ -100,7 +100,7 @@ Este curso de aproximadamente 60 minutos introduce a estudiantes de secundaria a
 ### Lección 7: Proyecto final — Registro de estudiantes (10 minutos)
 
 - **Descripción**: En esta lección construirás un mini programa en Java que integra todos los conceptos del curso: variables, operadores, estructuras de control, métodos, clases y encapsulación. El proyecto es un sistema de registro de estudiantes con menú interactivo en consola.
-- **Enlace**: [Ver la lección](https://youtu.be/0GQmVKn19c0)
+- **Enlace**: [Ver la lección](https://youtu.be/rbO5FdCYTxo)
 - **Conceptos clave**:
   - Dividir el sistema en clases claras facilita el desarrollo
   - La POO permite modelar entidades del mundo real como la clase `Estudiante`
