@@ -2,7 +2,7 @@
 
 # GUION DE VIDEO: LECCIÓN 4
 
-**Duración estimada**: 10 minutos
+**Duración estimada**: 5 minutos
 
 ## INTRODUCCIÓN
 

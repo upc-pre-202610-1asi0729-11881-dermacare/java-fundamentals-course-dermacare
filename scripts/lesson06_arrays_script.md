@@ -1,10 +1,6 @@
-# Guión — Lección 6: Arrays y cadenas
-
-
-He convertido tu texto a un formato de guion Markdown más limpio y profesional para la lección:
-
 # Guión — Lección 6: Arreglos (Arrays) y Métodos String
-**Duración estimada**: 7 minutos
+
+**Duración estimada**: 6 minutos
 
 ## INTRODUCCIÓN
 
